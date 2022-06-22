@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "reproduce-issue:intuitive-but-not-works": "npx nuxt build && export FOO=SPECIFIED BAR=SPECIFIED && npx node .output/server/index.mjs",
+    "reproduce-issue:works-but-strange": "npx nuxt build && export NITRO_FOO=SPECIFIED NITRO_PUBLIC_BAR=SPECIFIED && npx node .output/server/index.mjs",
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.4"
+  }
+}
